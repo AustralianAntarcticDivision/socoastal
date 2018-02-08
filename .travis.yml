@@ -8,6 +8,10 @@ r_packages:
  - mapview
  - sf
 
+before_install:
+  - sudo add-apt-repository ppa:ubuntugis/ubuntugis-unstable --yes
+  - sudo apt-get --yes --force-yes update -qq
+  
 addons:
     apt:
         packages:
@@ -15,7 +19,7 @@ addons:
             - libproj-dev
             - libgeos++-dev
             - libgdal-dev
-
+            - libgeos-dev
 matrix:
     include:
         - os: linux
