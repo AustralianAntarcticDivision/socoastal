@@ -80,7 +80,8 @@
 layers &lt;-<span class="st"> </span><span class="kw">st_sf</span>(<span class="dt">name =</span> <span class="kw">c</span>(<span class="st">"ibcso"</span>, <span class="st">"gebco"</span>, <span class="st">"scar"</span>), <span class="dt">type =</span> <span class="kw">c</span>(<span class="st">"bathymetry"</span>, <span class="st">"bathymetry"</span>, <span class="st">"coastline"</span>), 
                 <span class="dt">geometry =</span> <span class="kw">c</span>(ibcso_<span class="dv">500</span>, gebco_<span class="dv">500</span>, scar_<span class="dv">0</span>))
 m &lt;-<span class="st"> </span><span class="kw">mapview</span>(layers, <span class="dt">zcol =</span> <span class="st">"name"</span>, 
-             <span class="dt">color =</span> <span class="kw">c</span>(<span class="st">"#440154FF"</span>, <span class="st">"#21908CFF"</span>, <span class="st">"#000000FF"</span>), 
+             <span class="dt">color =</span> <span class="kw">c</span>(<span class="st">"#440154FF"</span>, <span class="st">"#21908CFF"</span>, <span class="st">"#000000FF"</span>),
+             <span class="dt">legend =</span> <span class="ot">TRUE</span>,
              ## http://leaflet-extras.github.io/leaflet-providers/preview/
              <span class="dt">map.types =</span> <span class="kw">c</span>(<span class="st">"Esri.NatGeoWorldMap"</span>, <span class="st">"Esri.OceanBasemap"</span>, <span class="st">"Esri.WorldPhysical"</span>, <span class="st">"CartoDB.DarkMatter"</span>, <span class="st">"OpenStreetMap"</span>,      <span class="st">"Esri.WorldImagery"</span> ))
 m</code></pre></div>
