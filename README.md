@@ -19,7 +19,7 @@ Example
 
 This shows loading the package and creating an interactive map, with some available data layers.
 
-See the vignette [socoastal]() for a live example.
+See the vignette [socoastal](https://australianantarcticdivision.github.io/socoastal/articles/socoastal.html) for a live example.
 
 ``` r
 library(socoastal)
