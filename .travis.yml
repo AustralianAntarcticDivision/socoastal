@@ -4,6 +4,10 @@ language: R
 warnings_are_errors: true
 sudo: true
 
+r_packages: 
+ - mapview
+ - sf
+
 addons:
     apt:
         packages:
