@@ -1,0 +1,33 @@
+---
+title: "Southern Ocean Coastal"
+author: "Michael Sumner"
+date: "`r Sys.Date()`"
+output:
+  rmarkdown::html_vignette:
+    fig_width: 7
+    fig_height: 7
+vignette: >
+  %\VignetteIndexEntry{socoastal}
+  %\VignetteEngine{knitr::rmarkdown}
+  %\VignetteEncoding{UTF-8}
+---
+
+```{r setup, include = FALSE}
+knitr::opts_chunk$set(
+  collapse = TRUE,
+  comment = "#>"
+)
+```
+
+This shows loading the package and creating an interactive map, with some available data layers. 
+
+Click "Show in New Window" to expand this view. 
+
+```{r}
+library(socoastal)
+library(mapview)
+library(sf)
+layers <- st_sf(name = c("ibcso", "gebco", "scar"), type = c("bathymetry", "bathymetry", "coastline"), 
+                geometry = c(ibcso_500, gebco_500, scar_0))
+mapview(layers, zcol = "name")
+```

@@ -1,0 +1,24 @@
+Package: socoastal
+Version: 0.0.0.9000
+Title: Explore Antarctica Coastal Regionalization
+Description: What the package does (one paragraph).
+Authors@R: person("Michael D.","Sumner", role = c("aut", "cre"), email =
+    "mdsumner@gmail.com")
+License: GPL-3
+Encoding: UTF-8
+LazyData: true
+ByteCompile: true
+Depends: R (>= 3.3.0)
+Remotes: AustralianAntarcticDivision/raadtools,
+    AustralianAntarcticDivision/aceecostats, 
+    lucymerobinson/CCAMLRGIS
+Suggests: 
+    aceecostats,
+    CCAMLRGIS,
+    mapview,
+    raadtools,
+    sf,
+    knitr,
+    rmarkdown
+RoxygenNote: 6.0.1
+VignetteBuilder: knitr

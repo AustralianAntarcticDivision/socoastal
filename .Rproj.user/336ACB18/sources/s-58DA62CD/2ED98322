@@ -1,0 +1,23 @@
+{
+    "collab_server" : "",
+    "contents" : "",
+    "created" : 1518058216436.000,
+    "dirty" : false,
+    "encoding" : "UTF-8",
+    "folds" : "",
+    "hash" : "2375575429",
+    "id" : "2ED98322",
+    "lastKnownWriteTime" : 1518058779,
+    "last_content_update" : 1518058779421,
+    "path" : "D:/000mdsumner/GIT/socoastal/vignettes/socoastal.Rmd",
+    "project_path" : "vignettes/socoastal.Rmd",
+    "properties" : {
+        "cursorPosition" : "24,0",
+        "last_setup_crc32" : "58DA62CD9990457b",
+        "scrollLine" : "10"
+    },
+    "relative_order" : 6,
+    "source_on_save" : false,
+    "source_window" : "",
+    "type" : "r_markdown"
+}
