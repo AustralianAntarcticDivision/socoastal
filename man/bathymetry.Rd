@@ -8,11 +8,11 @@
 \alias{scar_0}
 \title{Bathymetric isolines}
 \description{
-Geographic line objects, in simple features format (`sf` package).
+Geographic line objects, in simple features format (\code{sf} package).
 }
 \details{
 ibcso_500 is the -500m contour from IBCSO
 gebco_500 is the -500m contour from GEBCO 2014
-scar_0 is the coastline from CCAMLR, the CCAMLR Coastline based on SCAR Coastline data from `CCAMLRGIS`
+scar_0 is the coastline from CCAMLR, the CCAMLR Coastline based on SCAR Coastline data from \code{CCAMLRGIS}
 See "data-raw/bathymetry.R" for extraction details.
 }

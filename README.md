@@ -1,5 +1,7 @@
 
 <!-- README.md is generated from README.Rmd. Please edit that file -->
+[![Travis build status](https://travis-ci.org/AustralianAntarcticDivision/socoastal.svg?branch=master&env=BUILD_NAME=trusty_release&label=trusty_release)](https://travis-ci.org/AustralianAntarcticDivision/socoastal) [![Travis build status](https://travis-ci.org/AustralianAntarcticDivision/socoastal.svg?branch=master&env=BUILD_NAME=osx_release&label=osx_release)](https://travis-ci.org/AustralianAntarcticDivision/socoastal) [![AppVeyor Build Status](https://ci.appveyor.com/api/projects/status/github/AustralianAntarcticDivision/socoastal?branch=master&svg=true)](https://ci.appveyor.com/project/AustralianAntarcticDivision/socoastal)
+
 socoastal
 =========
 
@@ -24,7 +26,12 @@ See the vignette [socoastal](https://australianantarcticdivision.github.io/socoa
 ``` r
 library(socoastal)
 library(mapview)
-mapview(ibcso_500, color = "dodgerblue") + 
-  mapview(gebco_500, color = "firebrick") + 
-  mapview(scar_0, color = "black")
+library(sf)
+layers <- st_sf(name = c("ibcso", "gebco", "scar"), type = c("bathymetry", "bathymetry", "coastline"), 
+                geometry = c(ibcso_500, gebco_500, scar_0))
+m <- mapview(layers, zcol = "name", 
+             color = c("#440154FF", "#21908CFF", "#000000FF"), 
+             ## http://leaflet-extras.github.io/leaflet-providers/preview/
+             map.types = c("Esri.NatGeoWorldMap", "Esri.OceanBasemap", "Esri.WorldPhysical", "CartoDB.DarkMatter", "OpenStreetMap",      "Esri.WorldImagery" ))
+m
 ```
