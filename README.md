@@ -1,6 +1,6 @@
 
 <!-- README.md is generated from README.Rmd. Please edit that file -->
-[![Travis build status](https://travis-ci.org/AustralianAntarcticDivision/socoastal.svg?branch=master&env=BUILD_NAME=trusty_release&label=trusty_release)](https://travis-ci.org/AustralianAntarcticDivision/socoastal) [![Travis build status](https://travis-ci.org/AustralianAntarcticDivision/socoastal.svg?branch=master&env=BUILD_NAME=osx_release&label=osx_release)](https://travis-ci.org/AustralianAntarcticDivision/socoastal) [![AppVeyor Build Status](https://ci.appveyor.com/api/projects/status/github/AustralianAntarcticDivision/socoastal?branch=master&svg=true)](https://ci.appveyor.com/project/AustralianAntarcticDivision/socoastal)
+[![Travis build status](http://badges.herokuapp.com/travis/AustralianAntarcticDivision/socoastal.svg?branch=master&env=BUILD_NAME=trusty_release&label=trusty_release)](https://travis-ci.org/AustralianAntarcticDivision/socoastal) [![Travis build status](http://badges.herokuapp.com/travis/AustralianAntarcticDivision/socoastal.svg?branch=master&env=BUILD_NAME=osx_release&label=osx_release)](https://travis-ci.org/AustralianAntarcticDivision/socoastal) [![AppVeyor Build Status](https://ci.appveyor.com/api/projects/status/github/AustralianAntarcticDivision/socoastal?branch=master&svg=true)](https://ci.appveyor.com/project/AustralianAntarcticDivision/socoastal)
 
 socoastal
 =========
