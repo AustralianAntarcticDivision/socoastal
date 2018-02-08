@@ -21,6 +21,9 @@ knitr::opts_chunk$set(
 
 This shows loading the package and creating an interactive map, with some available data layers. 
 
+* **ibcso**:  http://www.ibcso.org/data.html
+* **gebco**: https://www.gebco.net/
+
 
 ```{r}
 library(socoastal)
