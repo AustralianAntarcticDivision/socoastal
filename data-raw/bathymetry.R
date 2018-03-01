@@ -25,7 +25,7 @@ usethis::use_data(gebco_500)
 ##get hires coastline available and aceeco regions
 
 library(CCAMLRGIS)
-library(help = "CCAMLRGIS")
+#library(help = "CCAMLRGIS")
 Coast <- load_Coastline("RDATA")
 
 scar_0 <- st_cast(st_as_sf(subset(Coast, gid == 1213)), "LINESTRING")
@@ -33,3 +33,6 @@ splitline <- st_buffer(st_transform(st_sfc(st_linestring(cbind(-180, c(-60, -88)
 x <- st_difference(scar_0, splitline)
 scar_0 <- st_union(st_transform(x, 4326))
 usethis::use_data(scar_0)
+
+scar_poly <- st_as_sf(subset(Coast, gid == 1213))
+usethis::use_data(scar_poly)
